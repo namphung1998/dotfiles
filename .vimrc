@@ -27,7 +27,6 @@ set incsearch
 
 set backspace=2            " Fix backspace behavior on most terminals.
 
-colorscheme codedark         " Change a colorscheme.
 
 " Set up persistent undoing across files
 set undofile
@@ -48,6 +47,7 @@ endif
 
 call plug#begin() " Manage plugins with vim-plug
 
+Plug 'tomasiser/vim-code-dark'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-unimpaired'
@@ -56,6 +56,7 @@ Plug 'sjl/gundo.vim'
 
 call plug#end()
 
+colorscheme codedark         " Change a colorscheme.
 " Ctrlp settings
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 let g:ctrlp_working_path_mode = 'ra'

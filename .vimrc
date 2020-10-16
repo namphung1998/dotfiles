@@ -54,6 +54,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'easymotion/vim-easymotion'
+Plug 'pangloss/vim-javascript'
 Plug 'fatih/vim-go'
 Plug 'SirVer/ultisnips'
 
@@ -67,6 +68,9 @@ let g:ctrlp_working_path_mode = 'ra'
 set tags=tags; " Look for tags file recursively in parent directories
 
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+
+" Vim-javascript settings
+autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 " Vim-go settings
 let g:go_fmt_command = 'goimports' " Run goimports on current file on save
